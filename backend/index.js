@@ -11,6 +11,7 @@ app.use(cors());
 
 app.get("/", (request, response) => {
   console.log(request);
+  return response.status(200).send("Hello World");
 });
 
 app.use("/project", router);
