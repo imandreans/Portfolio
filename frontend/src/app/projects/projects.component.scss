@@ -1,0 +1,50 @@
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 85%;
+  overflow-y: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+  .project {
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+    padding: 8px;
+    font-family: "Montserrat", sans-serif;
+    gap: 10px;
+    position: relative;
+    // border: 1px solid white;
+    .header {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      #name {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: white;
+      }
+      #name:hover {
+        color: #6e88e5;
+        transition: all 0.5s ease-in-out; /* Hover off */
+      }
+      #type {
+        border: 1px solid white;
+        width: max-content;
+        height: max-content;
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 10px;
+      }
+    }
+    #github {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    #github:hover {
+      color: #6e88e5;
+      transition: 0.5s;
+    }
+  }
+}

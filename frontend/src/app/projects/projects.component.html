@@ -1,0 +1,27 @@
+<div class="project-container">
+  <div class="list-project">
+    <div class="project-card" *ngFor="let project of projects">
+      <div class="project">
+        <div class="header">
+          <a
+            href="{{ project.linkProject }}"
+            id="name"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ project.name }}</a
+          >
+          <div id="type">{{ project.type }}</div>
+        </div>
+        <div>
+          <a
+            href="{{ project.sourceCode }}"
+            id="github"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
