@@ -19,7 +19,7 @@ export class ProjectsComponent implements OnInit {
 
   fetchData() {
     this.httpClient
-      .get<any[]>('http://localhost:5555/project')
+      .get<any[]>('https://portfolio-api-five-omega.vercel.app/')
       .subscribe((projects) => {
         this.projects = projects;
         console.log(projects);
