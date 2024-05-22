@@ -11,7 +11,7 @@ app.use(cors());
 
 app.get("/", (request, response) => {
   console.log(request);
-  return response.status(200).send({ "Content-Type": "text/plain" });
+  // return response.status(200).send({ "Content-Type": "text/plain" });
 });
 
 app.use("/project", router);
